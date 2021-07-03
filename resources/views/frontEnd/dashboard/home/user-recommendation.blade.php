@@ -30,99 +30,84 @@ User | Recommendation
         	</tr>
         </table>       
 
-        <h4 class="text-center pt-5 pb-2">Your Recommendation below here:</h4>
+        <h4 class="text-center pt-5 pb-2">Recommendation For You Below Here:</h4>
+
+        @foreach($section_wise_recom as $recom)
 
         @if($recommendationMark >= 91 && $recommendationMark <= 100)
-        <div class="alert alert-success alert-dismissible">
-          @php  
-            $recommendMsg = App\Model\Recommendation::where('percentageRange', '91_to_100')->first();
-          @endphp 
-          <button type="button" class="close" data-dismiss="alert"></button>
-          <strong>{{$recommendMsg->recommendation}}</strong>
-        </div>
-
+          @if($recom->range == 100) 
+            <div class="alert alert-success alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert"></button>
+              <h5 class="text-center"><strong>{{$recom->recommendation}}</strong></h5>
+            </div>
+          @endif
         @elseif($recommendationMark >= 81 && $recommendationMark <= 90)
-        <div class="alert alert-success alert-dismissible">
-          @php  
-            $recommendMsg = App\Model\Recommendation::where('percentageRange', '81_to_90')->first();
-          @endphp 
-          <button type="button" class="close" data-dismiss="alert"></button>
-          <strong>{{$recommendMsg->recommendation}}</strong>
-        </div>
-
+          @if($recom->range == 90) 
+            <div class="alert alert-success alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert"></button>
+              <h5 class="text-center"><strong>{{$recom->recommendation}}</strong></h5>
+            </div>
+          @endif
         @elseif($recommendationMark >= 71 && $recommendationMark <= 80)
-        <div class="alert alert-success alert-dismissible">
-          @php  
-            $recommendMsg = App\Model\Recommendation::where('percentageRange', '71_to_80')->first();
-          @endphp 
-          <button type="button" class="close" data-dismiss="alert"></button>
-          <strong>{{$recommendMsg->recommendation}}</strong>
-        </div>
-
+          @if($recom->range == 80) 
+            <div class="alert alert-success alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert"></button>
+              <h5 class="text-center"><strong>{{$recom->recommendation}}</strong></h5>
+            </div>
+          @endif
         @elseif($recommendationMark >= 61 && $recommendationMark <= 70)
-        <div class="alert alert-success alert-dismissible">
-          @php  
-            $recommendMsg = App\Model\Recommendation::where('percentageRange', '61_to_70')->first();
-          @endphp 
-          <button type="button" class="close" data-dismiss="alert"></button>
-          <strong>{{$recommendMsg->recommendation}}</strong>
-        </div>
-
+          @if($recom->range == 70) 
+            <div class="alert alert-success alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert"></button>
+              <h5 class="text-center"><strong>{{$recom->recommendation}}</strong></h5>
+            </div>
+          @endif
         @elseif($recommendationMark >= 51 && $recommendationMark <= 60)
-        <div class="alert alert-success alert-dismissible">
-          @php  
-            $recommendMsg = App\Model\Recommendation::where('percentageRange', '51_to_60')->first();
-          @endphp 
-          <button type="button" class="close" data-dismiss="alert"></button>
-          <strong>{{$recommendMsg->recommendation}}</strong>
-        </div>
-
+          @if($recom->range == 60) 
+            <div class="alert alert-success alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert"></button>
+              <h5 class="text-center"><strong>{{$recom->recommendation}}</strong></h5>
+            </div>
+          @endif
         @elseif($recommendationMark >= 41 && $recommendationMark <= 50)
-        <div class="alert alert-success alert-dismissible">
-          @php  
-            $recommendMsg = App\Model\Recommendation::where('percentageRange', '41_to_50')->first();
-          @endphp 
-          <button type="button" class="close" data-dismiss="alert"></button>
-          <strong>{{$recommendMsg->recommendation}}</strong>
-        </div>
-
+          @if($recom->range == 50) 
+            <div class="alert alert-success alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert"></button>
+              <h5 class="text-center"><strong>{{$recom->recommendation}}</strong></h5>
+            </div>
+          @endif
         @elseif($recommendationMark >= 31 && $recommendationMark <= 40)
-        <div class="alert alert-success alert-dismissible">
-          @php  
-            $recommendMsg = App\Model\Recommendation::where('percentageRange', '31_to_40')->first();
-          @endphp 
-          <button type="button" class="close" data-dismiss="alert"></button>
-          <strong>{{$recommendMsg->recommendation}}</strong>
-        </div>
-
+          @if($recom->range == 40) 
+            <div class="alert alert-success alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert"></button>
+              <h5 class="text-center"><strong>{{$recom->recommendation}}</strong></h5>
+            </div>
+          @endif
         @elseif($recommendationMark >= 21 && $recommendationMark <= 30)
-        <div class="alert alert-success alert-dismissible">
-          @php  
-            $recommendMsg = App\Model\Recommendation::where('percentageRange', '21_to_30')->first();
-          @endphp 
-          <button type="button" class="close" data-dismiss="alert"></button>
-          <strong>{{$recommendMsg->recommendation}}</strong>
-        </div>
-
+          @if($recom->range == 30) 
+            <div class="alert alert-success alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert"></button>
+              <h5 class="text-center"><strong>{{$recom->recommendation}}</strong></h5>
+            </div>
+          @endif
         @elseif($recommendationMark >= 11 && $recommendationMark <= 20)
-        <div class="alert alert-success alert-dismissible">
-          @php  
-            $recommendMsg = App\Model\Recommendation::where('percentageRange', '11_to_20')->first();
-          @endphp 
-          <button type="button" class="close" data-dismiss="alert"></button>
-          <strong>{{$recommendMsg->recommendation}}</strong>
-        </div>
-
+          @if($recom->range == 20) 
+            <div class="alert alert-success alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert"></button>
+              <h5 class="text-center"><strong>{{$recom->recommendation}}</strong></h5>
+            </div>
+          @endif
         @elseif($recommendationMark >= 0 && $recommendationMark <= 10)
-        <div class="alert alert-success alert-dismissible">
-          @php  
-            $recommendMsg = App\Model\Recommendation::where('percentageRange', '1_to_10')->first();
-          @endphp 
-          <button type="button" class="close" data-dismiss="alert"></button>
-          <strong>{{$recommendMsg->recommendation}}</strong>
-        </div>
+          @if($recom->range == 10) 
+            <div class="alert alert-success alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert"></button>
+              <h5 class="text-center"><strong>{{$recom->recommendation}}</strong></h5>
+            </div>
+          @endif
         @endif
-        
+
+        @endforeach
+
     </div>
 </main>
 @endsection

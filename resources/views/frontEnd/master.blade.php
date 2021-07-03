@@ -13,6 +13,7 @@
     <div class="wrapper">
     	@yield('content')
     </div>
+
     <!-- Bootstrap core JavaScript-->
 	<script src="{{ asset('public/frontEnd/js/jquery.min.js') }}"></script>
 	<script src="{{ asset('public/frontEnd/js/custom.js') }}"></script>

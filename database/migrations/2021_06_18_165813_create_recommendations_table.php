@@ -15,8 +15,9 @@ class CreateRecommendationsTable extends Migration
     {
         Schema::create('recommendations', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('percentageRange')->nullable();
+            $table->foreignId('section_id')->constrained('sections','id')->onDelete('cascade');
             $table->longText('recommendation')->nullable();
+            $table->integer('range')->nullable();
             $table->timestamps();
         });
     }

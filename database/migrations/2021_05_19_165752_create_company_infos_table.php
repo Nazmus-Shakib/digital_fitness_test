@@ -34,11 +34,6 @@ class CreateCompanyInfosTable extends Migration
             $table->string('qtn_16')->nullable();
             $table->string('qtn_17')->nullable();
             $table->string('qtn_18')->nullable();
-            $table->string('qtn_19')->nullable();
-            $table->string('qtn_20')->nullable();
-            $table->string('qtn_21')->nullable();
-            $table->string('qtn_22')->nullable();
-            $table->string('qtn_23')->nullable();
             $table->timestamps();
         });
     }

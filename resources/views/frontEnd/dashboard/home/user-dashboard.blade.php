@@ -13,11 +13,11 @@ User | Dashboard
         <div class="row">
             <div class="col-md-6">
                 <h4>Hey, <span>{{ Auth::user()->name }}</span></h4>
-                <p>Your answer information</p><br>
+                <p>Please click on view recommendation to see your survey results in each section</p><br>
             </div>
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
                 <a href="{{ route('retake.business.type') }}" class="btn btn-primary float-right">Retake Survey</a>
-            </div>
+            </div> -->
         </div>      
         <table class="table table-bordered" width="100%">
         	<tr>

@@ -5,6 +5,23 @@ User | Update
 @endsection
 
 @section('content')
+<!-- navbar -->
+		<div>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+				<a class="navbar-brand" href="{{ route('frontEnd.home') }}">IINFIN SME</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarText">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="{{ route('frontEnd.home') }}">Home</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
 <div class="container">
     <div class="card" style="margin-top: 200px;">
       <div class="text-center">
@@ -19,7 +36,7 @@ User | Update
             <div style="width: 50%; margin: auto;">
               <div class="p-3">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-4">Please complete registration info!</h1>
+                    <h1 class="h4 text-gray-900 mb-4">Please Complete Your Registration Info</h1>
                   </div>
                   <form class="user" method="POST" action="{{ route('user.signup',$user->id) }}">
                     @csrf

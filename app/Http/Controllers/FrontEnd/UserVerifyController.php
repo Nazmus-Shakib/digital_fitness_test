@@ -36,7 +36,7 @@ class UserVerifyController extends Controller
         );
 
         Mail::send('frontEnd.email.verify-email',$data, function($message) use($data) {
-            $message->from('tanjirhasan2020@gmail.com','Disital Fitness Test');
+            $message->from('hello@iinfin.com','Digital Fitness Test');
             $message->to($data['email']);
             $message->subject('Please verify your email address');
         });
@@ -67,7 +67,7 @@ class UserVerifyController extends Controller
             Session::flash('success','Verify successfully done, Please login!');
             return redirect()->route('login');
         }else{
-            Session::flash('error','Sorry! email or varification code invalid.');
+            Session::flash('error','Sorry! email or verification code invalid.');
             return redirect()->back();
         }
     }

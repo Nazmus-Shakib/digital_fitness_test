@@ -234,7 +234,7 @@ Edit | Company-Info
 		  </div>
 
 		  <div class="tab">
-		  	<b>Did it sustain or grow your business? 
+		  	<b>14. Did it sustain or grow your business? 
 			</b><br><br>
 		    <p class="text-center">
 		    	<input type="radio" id="yes" name="qtn_15" value="yes" style="width: 4%" {{($editCompany->qtn_15== 'yes') ? "checked":""}}>
@@ -245,7 +245,7 @@ Edit | Company-Info
 		  </div>
 
 		  <div class="tab">
-		  	<b>Do you give regular training and development to your workers? </b><br><br>
+		  	<b>15. Do you give regular training and development to your workers? </b><br><br>
 		    <p class="text-center">
 		    	<input type="radio" id="yes" name="qtn_21" value="yes" style="width: 2%" {{($editCompany->qtn_21== 'yes') ? "checked":""}}>
 				<label for="yes">Yes</label><br>
@@ -255,7 +255,7 @@ Edit | Company-Info
 		  </div>
 
 		  <div class="tab">
-		  	<b>Do you always review your workers’ performance in work? </b><br><br>
+		  	<b>16. Do you always review your workers’ performance in work? </b><br><br>
 		    <p class="text-center">
 		    	<input type="radio" id="yes" name="qtn_22" value="yes" style="width: 2%" {{($editCompany->qtn_22== 'yes') ? "checked":""}}>
 				<label for="yes">Yes</label><br>
@@ -265,7 +265,7 @@ Edit | Company-Info
 		  </div>
 
 		  <div class="tab">
-		  	<b>Do you always try to improve your employees’ engagement? </b><br><br>
+		  	<b>17. Do you always try to improve your employees’ engagement? </b><br><br>
 		    <p class="text-center">
 		    	<input type="radio" id="yes" name="qtn_23" value="yes" style="width: 2%" {{($editCompany->qtn_23== 'yes') ? "checked":""}}>
 				<label for="yes">Yes</label><br>

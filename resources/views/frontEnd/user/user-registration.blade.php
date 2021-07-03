@@ -10,31 +10,48 @@
 @section('content')
 
   @guest
+    <!-- Navbar -->
+    <div>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+				<a class="navbar-brand" href="{{ route('frontEnd.home') }}">IINFIN SME</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarText">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="{{ route('frontEnd.home') }}">Home</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
     <form id="regForm" method="POST" action="{{ route('user.info.store') }}" >
         @csrf
       <h1>Your Information:</h1>
       <!-- One "tab" for each step in the form: -->
 
       <div class="tab">
-        <b>Please enter your full name</b>
-        <p><input type="text" name="name" oninput="this.className = ''" placeholder="Enter your full name" value="{{ old('name') }}" /></p>
+        <b>Please Enter Your Full Name</b>
+        <p><input type="text" name="name" oninput="this.className = ''" placeholder="full name" value="{{ old('name') }}" /></p>
         <strong class="text-danger"> {{$errors->has('name') ? $errors->first('name') : '' }} </strong>
       </div>
 
       <div class="tab">
-        <b>Please enter your emil</b>
-        <p><input type="email" name="email" oninput="this.className = ''" placeholder="Enter your email" value="{{ old('email') }}" /></p>
+        <b>Please Enter Your Email</b>
+        <p><input type="email" name="email" oninput="this.className = ''" placeholder="email" value="{{ old('email') }}" /></p>
         <strong class="text-danger"> {{$errors->has('email') ? $errors->first('email') : '' }} </strong>
       </div>
 
       <div class="tab">
-        <b>Please enter your phone number</b>
-        <p><input type="text" name="phone" oninput="this.className = ''" placeholder="Enter your phone number" value="{{ old('phone') }}" /></p>
+        <b>Please Enter Your Phone Number</b>
+        <p><input type="text" name="phone" oninput="this.className = ''" placeholder="phone number" value="{{ old('phone') }}" /></p>
         <strong class="text-danger"> {{$errors->has('phone') ? $errors->first('phone') : '' }} </strong>
       </div>
 
       <div class="tab">
-        <b>Please enter your title.</b>
+        <b>Please Enter Your Title</b>
         <p>
             <select class="form-control" name="title">
                 <option value="">please select title</option>
@@ -56,8 +73,8 @@
       </div>
 
       <div class="tab">
-        <b>Please enter your designation</b>
-        <p><input type="text" name="designation" oninput="this.className = ''" placeholder="Enter your designation" value="{{ old('designation') }}" /></p>
+        <b>Please Enter Your Designation</b>
+        <p><input type="text" name="designation" oninput="this.className = ''" placeholder="designation" value="{{ old('designation') }}" /></p>
       </div>
 
       <div class="tab">

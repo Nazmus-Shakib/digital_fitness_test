@@ -5,6 +5,7 @@ Business | Type
 @endsection
 
 @section('content')
+
 <div class="container">
     <div class="card" style="margin-top: 200px;">
         @php
@@ -16,13 +17,13 @@ Business | Type
         <div class="card-body" style="text-align: center;">
             <div class="alert alert-danger alert-dismissible">
               <button type="button" class="close" data-dismiss="alert"></button>
-              <strong>Sorry! You can not take survey within 6 months.</strong>
+              <h3><strong>Sorry! You Can't Take The DFT Within 6 Months</strong></h3>
               <p>Please go back home. <a href="{{ route('user.dashboard') }}">Dashboard</a></p>
             </div>
         </div>
         @else
         <div class="card-body" style="text-align: center;">
-            <h3>Please select any business type.</h3><br>
+            <h3>Please Select Your Appropriate Business Type To Continue The DFT</h3><br>
             <div class="row">
                 @foreach($businessTypes as $business)
                 <div class="col-md-6">

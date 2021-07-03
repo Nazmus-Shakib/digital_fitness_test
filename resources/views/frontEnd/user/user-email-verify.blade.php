@@ -5,8 +5,25 @@ User | Update
 @endsection
 
 @section('content')
+<!-- navbar -->
+		<div>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+				<a class="navbar-brand" href="{{ route('frontEnd.home') }}">IINFIN SME</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarText">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="{{ route('frontEnd.home') }}">Home</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
 <div class="container">
-    <div class="card" style="margin-top: 200px;">
+    <div class="card" style="margin-top: 150px;">
       <div class="text-center">
         @if(Session::get('message'))
           <div class="alert alert-danger alert-dismissible">
@@ -33,12 +50,12 @@ User | Update
                   @endif
                 </div><br>
                 <div class="text-center">
-                  <h1 class="h4 text-gray-900 mb-4">E-mail Verify</h1>
+                  <h1 class="h4 text-gray-900 mb-4">Please Enter Your Email & Verification Code</h1>
                 </div>
                 <form class="user" method="POST" action="{{ route('verify.save') }}">
                   @csrf
                   <div class="form-group">
-                    <input type="email" name="email" class="form-control form-control-user" value="{{old('email')}}" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                    <input type="email" name="email" class="form-control form-control-user" value="{{old('email')}}" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
                     @if ($errors->has('email'))
                       <span class="help-block">
                           <strong class="text-danger">{{ $errors->first('email') }}</strong>
@@ -46,14 +63,14 @@ User | Update
                     @endif
                   </div>
                   <div class="form-group">
-                    <input type="text" name="code" class="form-control form-control-user" id="exampleInputPassword" placeholder="Verify code">
+                    <input type="text" name="code" class="form-control form-control-user" id="exampleInputPassword" placeholder="Verification code">
                     @if ($errors->has('code'))
                       <span class="help-block">
                           <strong class="text-danger">{{ $errors->first('code') }}</strong>
                       </span>
                     @endif
                   </div>
-                  <input type="submit" class="btn btn-primary btn-user btn-block" name="btn" value="Verify e-mail">
+                  <input type="submit" class="btn btn-primary btn-user btn-block" name="btn" value="Submit">
                 </form>
               </div>
             </div>

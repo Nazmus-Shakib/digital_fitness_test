@@ -14,7 +14,7 @@
 	    </div>
 	    <section style="width: 100%; display: inline-block;">
 	    	<h2 class="text-dark">Manage Profile</h2>
-	    	<a href="{{ route('user.profile.password.view') }}" class="btn btn-primary btn-sm float-right">Change Password</a>
+	    	<!-- <a href="{{ route('user.profile.password.view') }}" class="btn btn-primary btn-sm float-right">Change Password</a> -->
 	    </section>
 
 		<section class="content" style="width: 100%;">
@@ -51,6 +51,8 @@
 			                </table>
 
 			                <a href="{{ route('user.profile.edit') }}" class="btn btn-info btn-block"><b>Edit Profile</b></a>
+
+							<a href="{{ route('user.profile.password.view') }}" class="btn btn-primary btn-block"><b>Change Password</b></a>
 			              </div>
 			              <!-- /.card-body -->
 			            </div>

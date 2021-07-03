@@ -8,6 +8,23 @@
 @endpush
 
 @section('content')
+	<!-- navbar -->
+	<div>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+				<a class="navbar-brand" href="{{ route('frontEnd.home') }}">IINFIN SME</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarText">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="{{ route('frontEnd.home') }}">Home</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
 	<form id="regForm" action="{{ route('company.info.store') }}"  method="POST">
 		@csrf
 
@@ -400,34 +417,34 @@
 	  <div class="tab">
 	  	<b>Do you give regular training and development to your workers? </b><br><br>
 	    <p class="text-center">
-	    	<input type="radio" id="yes" name="qtn_21" value="yes" style="width: 2%">
+	    	<input type="radio" id="yes" name="qtn_16" value="yes" style="width: 2%">
 			<label for="yes">Yes</label><br>
-			<input type="radio" id="no" name="qtn_21" value="no" style="width: 2%">
+			<input type="radio" id="no" name="qtn_16" value="no" style="width: 2%">
 			<label for="no">No</label>
 	    </p>
-	    <strong class="text-danger"> {{$errors->has('qtn_21') ? $errors->first('qtn_21') : '' }} </strong>
+	    <strong class="text-danger"> {{$errors->has('qtn_16') ? $errors->first('qtn_16') : '' }} </strong>
 	  </div>
 
 	  <div class="tab">
 	  	<b>Do you always review your workers’ performance in work? </b><br><br>
 	    <p class="text-center">
-	    	<input type="radio" id="yes" name="qtn_22" value="yes" style="width: 2%">
+	    	<input type="radio" id="yes" name="qtn_17" value="yes" style="width: 2%">
 			<label for="yes">Yes</label><br>
-			<input type="radio" id="no" name="qtn_22" value="no" style="width: 2%">
+			<input type="radio" id="no" name="qtn_17" value="no" style="width: 2%">
 			<label for="no">No</label>
 	    </p>
-	    <strong class="text-danger"> {{$errors->has('qtn_22') ? $errors->first('qtn_22') : '' }} </strong>
+	    <strong class="text-danger"> {{$errors->has('qtn_17') ? $errors->first('qtn_17') : '' }} </strong>
 	  </div>
 
 	  <div class="tab">
 	  	<b>Do you always try to improve your employees’ engagement? </b><br><br>
 	    <p class="text-center">
-	    	<input type="radio" id="yes" name="qtn_23" value="yes" style="width: 2%">
+	    	<input type="radio" id="yes" name="qtn_18" value="yes" style="width: 2%">
 			<label for="yes">Yes</label><br>
-			<input type="radio" id="no" name="qtn_23" value="no" style="width: 2%">
+			<input type="radio" id="no" name="qtn_18" value="no" style="width: 2%">
 			<label for="no">No</label>
 	    </p>
-	    <strong class="text-danger"> {{$errors->has('qtn_23') ? $errors->first('qtn_23') : '' }} </strong>
+	    <strong class="text-danger"> {{$errors->has('qtn_18') ? $errors->first('qtn_18') : '' }} </strong>
 	  </div>
 
 	  <div style="overflow:auto;">

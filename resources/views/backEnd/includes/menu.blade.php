@@ -126,19 +126,19 @@
 
       <!-- Nav Item - Recommendation Collapse Menu -->
       <li class="nav-item">
-        <a class="{{ $route == 'recommendation.add' || $route == 'recommendation.view' || $route == 'recommendation.edit' ? '' : 'collapsed' }}
+        <a class="{{ $route == 'recommendation.add' || $route == 'recommendation.view' || $route == 'recommendation.edit' || $route == 'recommendation.details' ? '' : 'collapsed' }}
            nav-link" href="#" data-toggle="collapse" data-target="#recommendation" aria-expanded="true" aria-controls="recommendation">
           <i class="fa fa-diamond"></i>
-          <span>Manage Recommendation</span>
+          <span>Recommendation</span>
         </a>
-        <div id="recommendation" class="collapse {{ Request::is('recommendation/*') || Request::is('recommendation/edit/*') ? 'show' : '' }}" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="recommendation" class="collapse {{ Request::is('recommendation/*') || Request::is('recommendation/edit/*') || Request::is('recommendation/details/*') ? 'show' : '' }}" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
 
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Recommendation Info:</h6>
 
             <a class="{{ $route == 'recommendation.add' ? 'active' : '' }} collapse-item" href=" {{ route('recommendation.add')}} ">Add Recommendation</a>
 
-            <a class="{{ $route == 'recommendation.view' || $route == 'recommendation.edit' ? 'active' : '' }} collapse-item" href=" {{ route('recommendation.view')}} ">Manage Recommendation</a>
+            <a class="{{ $route == 'recommendation.view' || $route == 'recommendation.edit' || $route == 'recommendation.details' ? 'active' : '' }} collapse-item" href=" {{ route('recommendation.view')}} ">View Recommendation</a>
           </div>
         </div>
       </li>

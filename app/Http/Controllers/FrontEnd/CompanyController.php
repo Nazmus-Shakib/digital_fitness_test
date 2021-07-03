@@ -40,9 +40,9 @@ class CompanyController extends Controller
             'qtn_13' => 'required',
             'qtn_14' => 'required',
             'qtn_15' => 'required',
-            'qtn_21' => 'required',
-            'qtn_22' => 'required',
-            'qtn_23' => 'required',
+            'qtn_16' => 'required',
+            'qtn_17' => 'required',
+            'qtn_18' => 'required',
         ]);
 
         $company = new CompanyInfo();
@@ -62,16 +62,13 @@ class CompanyController extends Controller
         $company->qtn_13   = $request->qtn_13;
         $company->qtn_14   = $request->qtn_14;
         $company->qtn_15   = $request->qtn_15;
-        //$company->qtn_16   = $request->qtn_16;
-        //$company->qtn_17   = $request->qtn_17;
-        //$company->qtn_18   = $request->qtn_18;
+        $company->qtn_16   = $request->qtn_16;
+        $company->qtn_17   = $request->qtn_17;
+        $company->qtn_18   = $request->qtn_18;
         //$question_19       = implode(',', $request->qtn_19);
         //$company->qtn_19   = $question_19;
         //$question_20       = implode(',', $request->qtn_20);
         //$company->qtn_20   = $question_20;
-        $company->qtn_21   = $request->qtn_21;
-        $company->qtn_22   = $request->qtn_22;
-        $company->qtn_23   = $request->qtn_23;
         $company->save();
 
         $company_id    = $company->id;

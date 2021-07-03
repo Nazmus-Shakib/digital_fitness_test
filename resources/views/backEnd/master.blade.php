@@ -150,23 +150,7 @@
     });
   </script>
 
-<!-- select2 tool -->
-  <script>
-    $(function () {
-      //Initialize Select2 Elements
-      $('.select2').select2()
-
-      //Initialize Select2 Elements
-      $('.select2bs4').select2({
-        theme: 'bootstrap4'
-      })
-
-    })
-  </script>
-
-  <script type="text/javascript">
-    $('.demo').iconpicker();
-  </script>
+  @include('backEnd.includes.script')
 
   @stack('js')
 </body>

@@ -5,7 +5,9 @@ namespace App\Http\Controllers\FrontEnd;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Model\Answer;
+use App\Model\Section;
 use App\Model\CompanyInfo;
+use App\Model\Recommendation;
 use Session;
 use Auth;
 use DB;
@@ -38,8 +40,11 @@ class UserController extends Controller
 
 		$value = json_decode($questionData);
 		$questionTotalMark = $value[0]->weightage;
+
+        $section_wise_recom = Recommendation::where('section_id',$section_id)->get();
+
 		    		
-    	return view('frontEnd.dashboard.home.user-recommendation',compact('recommendation','questionTotalMark'));
+    	return view('frontEnd.dashboard.home.user-recommendation',compact('recommendation','questionTotalMark','section_wise_recom'));
     }
 
     public function companyInfoView()

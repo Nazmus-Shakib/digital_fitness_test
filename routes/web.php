@@ -124,9 +124,10 @@ Route::group(['namespace' => 'BackEnd', 'middleware' => ['auth','admin'] ], func
         Route::get('/view', 'RecommendationController@index')->name('recommendation.view');
         Route::get('/add', 'RecommendationController@create')->name('recommendation.add');
         Route::post('/save', 'RecommendationController@store')->name('recommendation.save');
-        Route::get('/edit/{id}', 'RecommendationController@edit')->name('recommendation.edit');
-        Route::post('/update/{id}', 'RecommendationController@update')->name('recommendation.update');
-        Route::get('/delete/{id}', 'RecommendationController@delete')->name('recommendation.delete');
+        Route::get('/edit/{section_id}', 'RecommendationController@edit')->name('recommendation.edit');
+        Route::post('/update/{section_id}', 'RecommendationController@update')->name('recommendation.update');
+        Route::get('/delete/{section_id}', 'RecommendationController@delete')->name('recommendation.delete');
+        Route::get('/details/{section_id}', 'RecommendationController@details')->name('recommendation.details');
     });
 
 });
