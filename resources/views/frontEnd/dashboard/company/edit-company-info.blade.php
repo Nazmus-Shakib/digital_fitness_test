@@ -223,7 +223,7 @@ Edit | Company-Info
 		  </div>
 
 		  <div class="tab">
-		  	<b>13. In the last 24 months, did your company implement any new digital processes or solutions? 
+		  	<b>13. In the last 24 months, did your company implement any new digital processes or solutions?
 			</b><br><br>
 		    <p class="text-center">
 		    	<input type="radio" id="yes" name="qtn_14" value="yes" style="width: 4%" {{($editCompany->qtn_14== 'yes') ? "checked":""}}>
@@ -234,7 +234,7 @@ Edit | Company-Info
 		  </div>
 
 		  <div class="tab">
-		  	<b>14. Did it sustain or grow your business? 
+		  	<b>14. Did it sustain or grow your business?
 			</b><br><br>
 		    <p class="text-center">
 		    	<input type="radio" id="yes" name="qtn_15" value="yes" style="width: 4%" {{($editCompany->qtn_15== 'yes') ? "checked":""}}>
@@ -247,9 +247,9 @@ Edit | Company-Info
 		  <div class="tab">
 		  	<b>15. Do you give regular training and development to your workers? </b><br><br>
 		    <p class="text-center">
-		    	<input type="radio" id="yes" name="qtn_21" value="yes" style="width: 2%" {{($editCompany->qtn_21== 'yes') ? "checked":""}}>
+		    	<input type="radio" id="yes" name="qtn_16" value="yes" style="width: 2%" {{($editCompany->qtn_16== 'yes') ? "checked":""}}>
 				<label for="yes">Yes</label><br>
-				<input type="radio" id="no" name="qtn_21" value="no" style="width: 2%" {{($editCompany->qtn_21== 'no') ? "checked":""}}>
+				<input type="radio" id="no" name="qtn_16" value="no" style="width: 2%" {{($editCompany->qtn_16== 'no') ? "checked":""}}>
 				<label for="no">No</label>
 		    </p>
 		  </div>
@@ -257,9 +257,9 @@ Edit | Company-Info
 		  <div class="tab">
 		  	<b>16. Do you always review your workers’ performance in work? </b><br><br>
 		    <p class="text-center">
-		    	<input type="radio" id="yes" name="qtn_22" value="yes" style="width: 2%" {{($editCompany->qtn_22== 'yes') ? "checked":""}}>
+		    	<input type="radio" id="yes" name="qtn_17" value="yes" style="width: 2%" {{($editCompany->qtn_17== 'yes') ? "checked":""}}>
 				<label for="yes">Yes</label><br>
-				<input type="radio" id="no" name="qtn_22" value="no" style="width: 2%" {{($editCompany->qtn_22== 'no') ? "checked":""}}>
+				<input type="radio" id="no" name="qtn_17" value="no" style="width: 2%" {{($editCompany->qtn_17== 'no') ? "checked":""}}>
 				<label for="no">No</label>
 		    </p>
 		  </div>
@@ -267,9 +267,9 @@ Edit | Company-Info
 		  <div class="tab">
 		  	<b>17. Do you always try to improve your employees’ engagement? </b><br><br>
 		    <p class="text-center">
-		    	<input type="radio" id="yes" name="qtn_23" value="yes" style="width: 2%" {{($editCompany->qtn_23== 'yes') ? "checked":""}}>
+		    	<input type="radio" id="yes" name="qtn_18" value="yes" style="width: 2%" {{($editCompany->qtn_18== 'yes') ? "checked":""}}>
 				<label for="yes">Yes</label><br>
-				<input type="radio" id="no" name="qtn_23" value="no" style="width: 2%" {{($editCompany->qtn_23== 'no') ? "checked":""}}>
+				<input type="radio" id="no" name="qtn_18" value="no" style="width: 2%" {{($editCompany->qtn_18== 'no') ? "checked":""}}>
 				<label for="no">No</label>
 		    </p>
 		  </div>

@@ -10,7 +10,7 @@ View | Company-Info
   <div class="card-body">
      <h2>Hey,</h2>
       <h3>{{ $company_info->user->name }}</h3>
-      <p>Your compnay information here</p> 
+      <p>Your compnay information here</p>
     <div class="table-responsive">
       <table class="table table-bordered" width="100%" cellspacing="0">
         <thead>
@@ -105,7 +105,7 @@ View | Company-Info
           <tr>
             <td>11</td>
             <td>
-              <h5>How much is your company’s paid up capital?</h5>              
+              <h5>How much is your company’s paid up capital?</h5>
               <p><b>Ans: </b>{{ ucwords(str_replace('_',' ',$company_info->qtn_12)) }}</p>
             </td>
           </tr>
@@ -194,7 +194,7 @@ View | Company-Info
               <p><b>Ans: </b>{{ ucwords($company_info->qtn_16) }}</p>
             </td>
           </tr> -->
-          
+
           <!-- <tr>
             <td>17</td>
             <td>
@@ -210,7 +210,7 @@ View | Company-Info
             <td>18</td>
             <td>
               <h5>What challenges do you encounter in your efforts to digitally transform the business and/or to adopt digital solutions?</h5>
-              @php 
+              @php
                $qtnArray = explode(",",$company_info->qtn_19)
               @endphp
               @if(in_array("1",$qtnArray))
@@ -246,7 +246,7 @@ View | Company-Info
             <td>19</td>
             <td>
               <h5>Reason why NOT increasing its digital transformation efforts or adopt more digital solutions in the next 12 months?</h5>
-              @php 
+              @php
                $qtn2Array = explode(",",$company_info->qtn_20)
               @endphp
               @if(in_array("1",$qtn2Array))
@@ -277,7 +277,7 @@ View | Company-Info
             <td>15</td>
             <td>
               <h5>Do you give regular training and development to your workers?</h5>
-              @if($company_info->qtn_21 == 'yes')
+              @if($company_info->qtn_16 == 'yes')
                 <p><b>Ans: </b>Yes</p>
               @else
                 <p><b>Ans: </b>No</p>
@@ -288,7 +288,7 @@ View | Company-Info
             <td>16</td>
             <td>
               <h5>Do you always review your workers’ performance in work?</h5>
-              @if($company_info->qtn_22 == 'yes')
+              @if($company_info->qtn_17 == 'yes')
                 <p><b>Ans: </b>Yes</p>
               @else
                 <p><b>Ans: </b>No</p>
@@ -299,7 +299,7 @@ View | Company-Info
             <td>17</td>
             <td>
               <h5>Do you always try to improve your employees’ engagement?</h5>
-              @if($company_info->qtn_23 == 'yes')
+              @if($company_info->qtn_18 == 'yes')
                 <p><b>Ans: </b>Yes</p>
               @else
                 <p><b>Ans: </b>No</p>
