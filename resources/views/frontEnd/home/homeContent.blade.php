@@ -24,7 +24,7 @@ Home Page
 		</div>
 
 		<div class="container" id="firstMessage">
-			<div class="pt-3"> 
+			<div class="pt-3">
 				<h2 class="text-center pb-2">DIGITAL FITNESS TEST</h2>
 				<p>This FREE service is part of IINFIN’s SME outreach program to complement the government’s initiatives to encourage SMEs to digitize their businesses through process transformation and adoption of digital solutions.</p>
 				<ul>
@@ -49,10 +49,7 @@ Home Page
 
 			<div>
 				<p>Click on “NEXT” to proceed</p>
-				<div class="d-flex">
-					<button type="button" class="btn btn-danger btn-block mr-2">EXIT</button>
-					<button type="submit" onclick="handleMessage(true)" class="btn btn-success btn-block ml-2">NEXT</button>
-				</div>
+				<button type="submit" onclick="handleMessage(true)" class="btn btn-info btn-block">NEXT</button>
 			</div>
 		</div>
 

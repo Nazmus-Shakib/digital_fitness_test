@@ -3,6 +3,7 @@
 namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
+use App\User;
 
 class Answer extends Model
 {
@@ -12,5 +13,9 @@ class Answer extends Model
 
     public function section(){
     	return $this->belongsTo(Section::class);
+    }
+
+    public function user(){
+    	return $this->belongsTo(User::class);
     }
 }

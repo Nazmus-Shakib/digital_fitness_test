@@ -91,6 +91,10 @@ Route::group(['namespace' => 'BackEnd', 'middleware' => ['auth','admin'] ], func
         Route::get('/pending/view', 'UserInfoController@pendingView')->name('users.pending.view');
         Route::get('/pending/delte/{id}', 'UserInfoController@pendingDelete')->name('users.pending.delte');
         Route::get('/company/view/{id}', 'UserInfoController@companyView')->name('users.company.view');
+
+        //users recommendation section
+        Route::get('/recommend/view', 'UserInfoController@userRecommend')->name('users.recommend.view');
+        Route::get('/recommend-details/{section_id}/{user_id}', 'UserInfoController@recommendDetails')->name('users.recommend.details');
     });
 
     Route::prefix('business-type')->group(function(){

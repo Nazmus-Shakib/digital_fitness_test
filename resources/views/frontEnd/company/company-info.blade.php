@@ -51,7 +51,7 @@
 
 	  <div class="tab">
 	  	<b>What is your company registered name?</b>
-	    <p><input placeholder="Company Name" oninput="this.className = '' "name="qtn_1"></p>
+	    <p><input placeholder="Company Name" oninput="this.className = '' "name="qtn_1" value="{{old('qtn_1')}}"></p>
 	    <strong class="text-danger"> {{$errors->has('qtn_1') ? $errors->first('qtn_1') : '' }} </strong>
 	  </div>
 
@@ -60,36 +60,36 @@
 	    <p>
 	    	<select class="form-control" name="qtn_2">
 	    		<option value="">Please select</option>
-	    		<option value="1_year">1 Year</option>
-	    		<option value="2_year">2 Year</option>
-	    		<option value="3_year">3 Year</option>
-	    		<option value="4_year">4 Year</option>
-	    		<option value="5_year">5 Year</option>
-	    		<option value="6_year">6 Year</option>
-	    		<option value="7_year">7 Year</option>
-	    		<option value="8_year">8 Year</option>
-	    		<option value="9_year">9 Year</option>
-	    		<option value="10_year">10 Year</option>
-	    		<option value="11_year">11 Year</option>
-	    		<option value="12_year">12 Year</option>
-	    		<option value="13_year">13 Year</option>
-	    		<option value="14_year">14 Year</option>
-	    		<option value="15_year">15 Year</option>
-	    		<option value="16_year">16 Year</option>
-	    		<option value="17_year">17 Year</option>
-	    		<option value="18_year">18 Year</option>
-	    		<option value="19_year">19 Year</option>
-	    		<option value="20_year">20 Year</option>
-	    		<option value="21_year">21 Year</option>
-	    		<option value="22_year">22 Year</option>
-	    		<option value="23_year">23 Year</option>
-	    		<option value="24_year">24 Year</option>
-	    		<option value="25_year">25 Year</option>
-	    		<option value="26_year">26 Year</option>
-	    		<option value="27_year">27 Year</option>
-	    		<option value="28_year">28 Year</option>
-	    		<option value="29_year">29 Year</option>
-	    		<option value="30_year">30 Year</option>
+	    		<option value="1_year" @if(old('qtn_2') == '1_year') selected="selected" @endif>1 Year</option>
+	    		<option value="2_year" @if(old('qtn_2') == '2_year') selected="selected" @endif>2 Year</option>
+	    		<option value="3_year" @if(old('qtn_2') == '3_year') selected="selected" @endif>3 Year</option>
+	    		<option value="4_year" @if(old('qtn_2') == '4_year') selected="selected" @endif>4 Year</option>
+	    		<option value="5_year" @if(old('qtn_2') == '5_year') selected="selected" @endif>5 Year</option>
+	    		<option value="6_year" @if(old('qtn_2') == '6_year') selected="selected" @endif>6 Year</option>
+	    		<option value="7_year" @if(old('qtn_2') == '7_year') selected="selected" @endif>7 Year</option>
+	    		<option value="8_year" @if(old('qtn_2') == '8_year') selected="selected" @endif>8 Year</option>
+	    		<option value="9_year" @if(old('qtn_2') == '9_year') selected="selected" @endif>9 Year</option>
+	    		<option value="10_year" @if(old('qtn_2') == '10_year') selected="selected" @endif>10 Year</option>
+	    		<option value="11_year" @if(old('qtn_2') == '11_year') selected="selected" @endif>11 Year</option>
+	    		<option value="12_year" @if(old('qtn_2') == '12_year') selected="selected" @endif>12 Year</option>
+	    		<option value="13_year" @if(old('qtn_2') == '13_year') selected="selected" @endif>13 Year</option>
+	    		<option value="14_year" @if(old('qtn_2') == '14_year') selected="selected" @endif>14 Year</option>
+	    		<option value="15_year" @if(old('qtn_2') == '15_year') selected="selected" @endif>15 Year</option>
+	    		<option value="16_year" @if(old('qtn_2') == '16_year') selected="selected" @endif>16 Year</option>
+	    		<option value="17_year" @if(old('qtn_2') == '17_year') selected="selected" @endif>17 Year</option>
+	    		<option value="18_year" @if(old('qtn_2') == '18_year') selected="selected" @endif>18 Year</option>
+	    		<option value="19_year" @if(old('qtn_2') == '19_year') selected="selected" @endif>19 Year</option>
+	    		<option value="20_year" @if(old('qtn_2') == '20_year') selected="selected" @endif>20 Year</option>
+	    		<option value="21_year" @if(old('qtn_2') == '21_year') selected="selected" @endif>21 Year</option>
+	    		<option value="22_year" @if(old('qtn_2') == '22_year') selected="selected" @endif>22 Year</option>
+	    		<option value="23_year" @if(old('qtn_2') == '23_year') selected="selected" @endif>23 Year</option>
+	    		<option value="24_year" @if(old('qtn_2') == '24_year') selected="selected" @endif>24 Year</option>
+	    		<option value="25_year" @if(old('qtn_2') == '25_year') selected="selected" @endif>25 Year</option>
+	    		<option value="26_year" @if(old('qtn_2') == '26_year') selected="selected" @endif>26 Year</option>
+	    		<option value="27_year" @if(old('qtn_2') == '27_year') selected="selected" @endif>27 Year</option>
+	    		<option value="28_year" @if(old('qtn_2') == '28_year') selected="selected" @endif>28 Year</option>
+	    		<option value="29_year" @if(old('qtn_2') == '29_year') selected="selected" @endif>29 Year</option>
+	    		<option value="30_year" @if(old('qtn_2') == '30_year') selected="selected" @endif>30 Year</option>
 	    	</select>
 		</p>
 		<strong class="text-danger"> {{$errors->has('qtn_2') ? $errors->first('qtn_2') : '' }} </strong>
@@ -101,27 +101,27 @@
 	  	<p>
 	    	<select class="form-control" name="qtn_3">
 	    		<option value="">Please select</option>
-	    		<option value="kl">KL</option>
-	    		<option value="selangor">Selangor</option>
-	    		<option value="perlis">Perlis</option>
-	    		<option value="kedah">Kedah</option>
-	    		<option value="penang">Penang</option>
-	    		<option value="perak">Perak</option>
-	    		<option value="melaka">Melaka</option>
-	    		<option value="ng_sembilan">Ng. Sembilan</option>
-	    		<option value="johor">Johor</option>
-	    		<option value="pahang">Pahang</option>
-	    		<option value="terengganu">Terengganu</option>
-	    		<option value="kelantan">Kelantan</option>
-	    		<option value="sabah">Sabah</option>
-	    		<option value="sarawak">Sarawak</option>
-	    		<option value="labuan">Labuan</option>
-	    		<option value="putrajaya">Putrajaya</option>
+	    		<option value="kl" @if(old('qtn_3') == 'kl') selected="selected" @endif>KL</option>
+	    		<option value="selangor" @if(old('qtn_3') == 'selangor') selected="selected" @endif>Selangor</option>
+	    		<option value="perlis" @if(old('qtn_3') == 'perlis') selected="selected" @endif>Perlis</option>
+	    		<option value="kedah" @if(old('qtn_3') == 'kedah') selected="selected" @endif>Kedah</option>
+	    		<option value="penang" @if(old('qtn_3') == 'penang') selected="selected" @endif>Penang</option>
+	    		<option value="perak" @if(old('qtn_3') == 'perak') selected="selected" @endif>Perak</option>
+	    		<option value="melaka" @if(old('qtn_3') == 'melaka') selected="selected" @endif>Melaka</option>
+	    		<option value="ng_sembilan" @if(old('qtn_3') == 'ng_sembilan') selected="selected" @endif>Ng. Sembilan</option>
+	    		<option value="johor" @if(old('qtn_3') == 'johor') selected="selected" @endif>Johor</option>
+	    		<option value="pahang" @if(old('qtn_3') == 'pahang') selected="selected" @endif>Pahang</option>
+	    		<option value="terengganu" @if(old('qtn_3') == 'terengganu') selected="selected" @endif>Terengganu</option>
+	    		<option value="kelantan" @if(old('qtn_3') == 'kelantan') selected="selected" @endif>Kelantan</option>
+	    		<option value="sabah" @if(old('qtn_3') == 'sabah') selected="selected" @endif>Sabah</option>
+	    		<option value="sarawak" @if(old('qtn_3') == 'sarawak') selected="selected" @endif>Sarawak</option>
+	    		<option value="labuan" @if(old('qtn_3') == 'labuan') selected="selected" @endif>Labuan</option>
+	    		<option value="putrajaya" @if(old('qtn_3') == 'putrajaya') selected="selected" @endif>Putrajaya</option>
 	    	</select>
 		</p>
 		<strong class="text-danger"> {{$errors->has('qtn_3') ? $errors->first('qtn_3') : '' }} </strong><br>
 		<span>Postcode</span>
-	    <p><input placeholder="Please enter" oninput="this.className = '' "name="qtn_4"></p>
+	    <p><input placeholder="Please enter" oninput="this.className = '' "name="qtn_4" value="{{old('qtn_4')}}"></p>
 	    <strong class="text-danger"> {{$errors->has('qtn_4') ? $errors->first('qtn_4') : '' }} </strong>
 	  </div>
 
@@ -130,10 +130,10 @@
 	    <p>
 	    	<select class="form-control" name="qtn_5">
 				<option value="">Please select</option>
-	    		<option value="solo_proprietor">Solo Proprietor</option>
-	    		<option value="partnership">Partnership</option>
-	    		<option value="limited_liability_partnership">Limited Liability Partnership (LLP)</option>
-	    		<option value="private_limited_company">Private Limited Company (sdn bhd)</option>
+	    		<option value="solo_proprietor" @if(old('qtn_5') == 'solo_proprietor') selected="selected" @endif>Solo Proprietor</option>
+	    		<option value="partnership" @if(old('qtn_5') == 'partnership') selected="selected" @endif>Partnership</option>
+	    		<option value="limited_liability_partnership" @if(old('qtn_5') == 'limited_liability_partnership') selected="selected" @endif>Limited Liability Partnership (LLP)</option>
+	    		<option value="private_limited_company" @if(old('qtn_5') == 'private_limited_company') selected="selected" @endif>Private Limited Company (sdn bhd)</option>
 	    	</select>
 		</p>
 		<strong class="text-danger"> {{$errors->has('qtn_5') ? $errors->first('qtn_5') : '' }} </strong>
@@ -144,11 +144,11 @@
 	    <p>
 	    	<select class="form-control" name="qtn_6">
 	    		<option value="">Please select</option>
-	    		<option value="agriculture">Agriculture</option>
-	    		<option value="construction">Construction</option>
-	    		<option value="manufacturing">Manufacturing</option>
-	    		<option value="mining_and_quarring">Mining and Quarring</option>
-	    		<option value="service">Service</option>
+	    		<option value="agriculture" @if(old('qtn_6') == 'agriculture') selected="selected" @endif>Agriculture</option>
+	    		<option value="construction" @if(old('qtn_6') == 'construction') selected="selected" @endif>Construction</option>
+	    		<option value="manufacturing" @if(old('qtn_6') == 'manufacturing') selected="selected" @endif>Manufacturing</option>
+	    		<option value="mining_and_quarring" @if(old('qtn_6') == 'mining_and_quarring') selected="selected" @endif>Mining and Quarring</option>
+	    		<option value="service" @if(old('qtn_6') == 'service') selected="selected" @endif>Service</option>
 	    	</select>
 		</p>
 		<strong class="text-danger"> {{$errors->has('qtn_6') ? $errors->first('qtn_6') : '' }} </strong>
@@ -159,26 +159,26 @@
 	    <p>
 	    	<select class="form-control" name="qtn_7">
 	    		<option value="">Please select</option>
-	    		<option value="aerospace">Aerospace</option>
-	    		<option value="automotive">Automotive</option>
-	    		<option value="Defence">Defence</option>
-	    		<option value="food_&_drink">Food & Drink</option>
-	    		<option value="furniture">Furniture</option>
-	    		<option value="general_engineering">General Engineering</option>
-	    		<option value="nuclear">Nuclear</option>
-	    		<option value="oil_&_gas">Oil & Gas</option>
-	    		<option value="securities">Securities</option>
-	    		<option value="space">Space</option>
-	    		<option value="telecommunication">Telecommunication</option>
-	    		<option value="civil_engineering">Civil Engineering</option>
-	    		<option value="textile">Textile</option>
-	    		<option value="electrical_&_electronic_engineering">Electrical & Electronic Engineering</option>
-	    		<option value="industrial_gas_&_turbine">Industrial Gas & Turbine</option>
-	    		<option value="rail">Rail</option>
-	    		<option value="marine">Marine</option>
-	    		<option value="petrochemical">Petrochemical</option>
-	    		<option value="medical">Medical</option>
-	    		<option value="maritime_system">Maritime System</option>
+	    		<option value="aerospace" @if(old('qtn_7') == 'aerospace') selected="selected" @endif>Aerospace</option>
+	    		<option value="automotive" @if(old('qtn_7') == 'automotive') selected="selected" @endif>Automotive</option>
+	    		<option value="defence" @if(old('qtn_7') == 'defence') selected="selected" @endif>Defence</option>
+	    		<option value="food_&_drink" @if(old('qtn_7') == 'food_&_drink') selected="selected" @endif>Food & Drink</option>
+	    		<option value="furniture" @if(old('qtn_7') == 'furniture') selected="selected" @endif>Furniture</option>
+	    		<option value="general_engineering" @if(old('qtn_7') == 'general_engineering') selected="selected" @endif>General Engineering</option>
+	    		<option value="nuclear" @if(old('qtn_7') == 'nuclear') selected="selected" @endif>Nuclear</option>
+	    		<option value="oil_&_gas" @if(old('qtn_7') == 'oil_&_gas') selected="selected" @endif>Oil & Gas</option>
+	    		<option value="securities" @if(old('qtn_7') == 'securities') selected="selected" @endif>Securities</option>
+	    		<option value="space" @if(old('qtn_7') == 'space') selected="selected" @endif>Space</option>
+	    		<option value="telecommunication" @if(old('qtn_7') == 'telecommunication') selected="selected" @endif>Telecommunication</option>
+	    		<option value="civil_engineering" @if(old('qtn_7') == 'civil_engineering') selected="selected" @endif>Civil Engineering</option>
+	    		<option value="textile" @if(old('qtn_7') == 'textile') selected="selected" @endif>Textile</option>
+	    		<option value="electrical_&_electronic_engineering" @if(old('qtn_7') == 'electrical_&_electronic_engineering') selected="selected" @endif>Electrical & Electronic Engineering</option>
+	    		<option value="industrial_gas_&_turbine" @if(old('qtn_7') == 'industrial_gas_&_turbine') selected="selected" @endif>Industrial Gas & Turbine</option>
+	    		<option value="rail" @if(old('qtn_7') == 'rail') selected="selected" @endif>Rail</option>
+	    		<option value="marine" @if(old('qtn_7') == 'marine') selected="selected" @endif>Marine</option>
+	    		<option value="petrochemical" @if(old('qtn_7') == 'petrochemical') selected="selected" @endif>Petrochemical</option>
+	    		<option value="medical" @if(old('qtn_7') == 'medical') selected="selected" @endif>Medical</option>
+	    		<option value="maritime_system" @if(old('qtn_7') == 'maritime_system') selected="selected" @endif>Maritime System</option>
 	    	</select>
 		</p>
 		<strong class="text-danger"> {{$errors->has('qtn_7') ? $errors->first('qtn_7') : '' }} </strong>
@@ -189,9 +189,9 @@
 	    <p>
 	    	<select class="form-control" name="qtn_8">
 	    		<option value="">Please select</option>
-	    		<option value="less_than_50%">Less than 50%</option>
-	    		<option value="50%-60%">50% to 60%</option>
-	    		<option value="more_than_60%">More than 60%</option>
+	    		<option value="less_than_50%" @if(old('qtn_8') == 'less_than_50%') selected="selected" @endif>Less than 50%</option>
+	    		<option value="50%-60%" @if(old('qtn_8') == '50%-60%') selected="selected" @endif>50% to 60%</option>
+	    		<option value="more_than_60%" @if(old('qtn_8') == 'more_than_60%') selected="selected" @endif>More than 60%</option>
 	    	</select>
 		</p>
 		<strong class="text-danger"> {{$errors->has('qtn_8') ? $errors->first('qtn_8') : '' }} </strong>
@@ -202,10 +202,10 @@
 	    <p>
 	    	<select class="form-control" name="qtn_9">
 	    		<option value="">Please select</option>
-	    		<option value="less_than_5">Less than 5</option>
-	    		<option value="5-30">5 – 30</option>
-	    		<option value="31-75">31 – 75</option>
-	    		<option value="more_than_75">More than 75</option>
+	    		<option value="less_than_5" @if(old('qtn_9') == 'less_than_5') selected="selected" @endif>Less than 5</option>
+	    		<option value="5-30" @if(old('qtn_9') == '5-30') selected="selected" @endif>5 – 30</option>
+	    		<option value="31-75" @if(old('qtn_9') == '31-75') selected="selected" @endif>31 – 75</option>
+	    		<option value="more_than_75" @if(old('qtn_9') == 'more_than_75') selected="selected" @endif>More than 75</option>
 	    	</select>
 		</p>
 		<strong class="text-danger"> {{$errors->has('qtn_9') ? $errors->first('qtn_9') : '' }} </strong>
@@ -216,9 +216,9 @@
 	    <p>
 	    	<select class="form-control" name="qtn_10">
 	    		<option value="">Please select</option>
-	    		<option value="increase">Increase</option>
-	    		<option value="decrease">Decrease</option>
-	    		<option value="no_change">No Change</option>
+	    		<option value="increase" @if(old('qtn_10') == 'increase') selected="selected" @endif>Increase</option>
+	    		<option value="decrease" @if(old('qtn_10') == 'decrease') selected="selected" @endif>Decrease</option>
+	    		<option value="no_change" @if(old('qtn_10') == 'no_change') selected="selected" @endif>No Change</option>
 	    	</select>
 		</p>
 		<strong class="text-danger"> {{$errors->has('qtn_10') ? $errors->first('qtn_10') : '' }} </strong>
@@ -229,9 +229,9 @@
 	    <p>
 	    	<select class="form-control" name="qtn_11">
 	    		<option value="">Please select</option>
-	    		<option value="less_than_30%">Less than 30%</option>
-	    		<option value="30%-50%">30%-50%</option>
-	    		<option value="more_than_50%">More than 50%</option>
+	    		<option value="less_than_30%" @if(old('qtn_11') == 'less_than_30%') selected="selected" @endif>Less than 30%</option>
+	    		<option value="30%-50%" @if(old('qtn_11') == '30%-50%') selected="selected" @endif>30%-50%</option>
+	    		<option value="more_than_50%" @if(old('qtn_11') == 'more_than_50%') selected="selected" @endif>More than 50%</option>
 	    	</select>
 		</p>
 		<strong class="text-danger"> {{$errors->has('qtn_11') ? $errors->first('qtn_11') : '' }} </strong>
@@ -242,8 +242,8 @@
 	    <p>
 	    	<select class="form-control" name="qtn_12">
 	    		<option value="">Please select</option>
-	    		<option value="less_than_RM50K">Less than RM50K</option>
-	    		<option value="more_than_RM50K">More than RM50K</option>
+	    		<option value="less_than_RM50K" @if(old('qtn_12') == 'less_than_RM50K') selected="selected" @endif>Less than RM50K</option>
+	    		<option value="more_than_RM50K" @if(old('qtn_12') == 'more_than_RM50K') selected="selected" @endif>More than RM50K</option>
 	    	</select>
 		</p>
 		<strong class="text-danger"> {{$errors->has('qtn_12') ? $errors->first('qtn_12') : '' }} </strong>
@@ -254,8 +254,8 @@
 	    <p>
 	    	<select class="form-control" name="qtn_13">
 	    		<option value="">Please select</option>
-	    		<option value="less_than_RM300K">Less than RM300K</option>
-	    		<option value="more_than_RM300K">More than RM300K</option>
+	    		<option value="less_than_RM300K" @if(old('qtn_13') == 'less_than_RM300K') selected="selected" @endif>Less than RM300K</option>
+	    		<option value="more_than_RM300K" @if(old('qtn_13') == 'more_than_RM300K') selected="selected" @endif>More than RM300K</option>
 	    	</select>
 		</p>
 		<strong class="text-danger"> {{$errors->has('qtn_13') ? $errors->first('qtn_13') : '' }} </strong>
@@ -319,24 +319,24 @@
 	  </div>
 
 	  <div class="tab">
-	  	<b>In the last 24 months, did your company implement any new digital processes or solutions? 
+	  	<b>In the last 24 months, did your company implement any new digital processes or solutions?
 		</b><br><br>
 	    <p class="text-center">
-	    	<input type="radio" id="yes" name="qtn_14" value="yes" style="width: 4%">
+	    	<input type="radio" id="yes" name="qtn_14" value="yes" style="width: 4%" @if(old('qtn_14') == 'yes') checked @endif>
 			<label for="yes">Yes</label><br>
-			<input type="radio" id="no" name="qtn_14" value="no" style="width: 4%">
+			<input type="radio" id="no" name="qtn_14" value="no" style="width: 4%" @if(old('qtn_14') == 'no') checked @endif>
 			<label for="no">No</label>
 	    </p>
 	    <strong class="text-danger"> {{$errors->has('qtn_14') ? $errors->first('qtn_14') : '' }} </strong>
 	  </div>
 
 	  <div class="tab">
-	  	<b>Did it sustain or grow your business? 
+	  	<b>Did it sustain or grow your business?
 		</b><br><br>
 	    <p class="text-center">
-	    	<input type="radio" id="yes" name="qtn_15" value="yes" style="width: 4%">
+	    	<input type="radio" id="yes" name="qtn_15" value="yes" style="width: 4%" @if(old('qtn_15') == 'yes') checked @endif>
 			<label for="yes">Yes</label><br>
-			<input type="radio" id="no" name="qtn_15" value="no" style="width: 4%">
+			<input type="radio" id="no" name="qtn_15" value="no" style="width: 4%" @if(old('qtn_15') == 'no') checked @endif>
 			<label for="no">No</label>
 	    </p>
 	    <strong class="text-danger"> {{$errors->has('qtn_15') ? $errors->first('qtn_15') : '' }} </strong>
@@ -383,7 +383,7 @@
 			<label for="">Other (Please Specify):</label><br>
 	    </p>
 	  </div> -->
-	  
+
 	  <!-- <div class="tab">
 	  	<b>Reason why NOT increasing its digital transformation efforts or adopt more digital solutions in the next 12 months? </b><br><br>
 	    <p class="text-center">
@@ -417,9 +417,9 @@
 	  <div class="tab">
 	  	<b>Do you give regular training and development to your workers? </b><br><br>
 	    <p class="text-center">
-	    	<input type="radio" id="yes" name="qtn_16" value="yes" style="width: 2%">
+	    	<input type="radio" id="yes" name="qtn_16" value="yes" style="width: 2%" @if(old('qtn_16') == 'yes') checked @endif>
 			<label for="yes">Yes</label><br>
-			<input type="radio" id="no" name="qtn_16" value="no" style="width: 2%">
+			<input type="radio" id="no" name="qtn_16" value="no" style="width: 2%" @if(old('qtn_16') == 'no') checked @endif>
 			<label for="no">No</label>
 	    </p>
 	    <strong class="text-danger"> {{$errors->has('qtn_16') ? $errors->first('qtn_16') : '' }} </strong>
@@ -428,9 +428,9 @@
 	  <div class="tab">
 	  	<b>Do you always review your workers’ performance in work? </b><br><br>
 	    <p class="text-center">
-	    	<input type="radio" id="yes" name="qtn_17" value="yes" style="width: 2%">
+	    	<input type="radio" id="yes" name="qtn_17" value="yes" style="width: 2%" @if(old('qtn_17') == 'yes') checked @endif>
 			<label for="yes">Yes</label><br>
-			<input type="radio" id="no" name="qtn_17" value="no" style="width: 2%">
+			<input type="radio" id="no" name="qtn_17" value="no" style="width: 2%" @if(old('qtn_17') == 'no') checked @endif>
 			<label for="no">No</label>
 	    </p>
 	    <strong class="text-danger"> {{$errors->has('qtn_17') ? $errors->first('qtn_17') : '' }} </strong>
@@ -439,9 +439,9 @@
 	  <div class="tab">
 	  	<b>Do you always try to improve your employees’ engagement? </b><br><br>
 	    <p class="text-center">
-	    	<input type="radio" id="yes" name="qtn_18" value="yes" style="width: 2%">
+	    	<input type="radio" id="yes" name="qtn_18" value="yes" style="width: 2%" @if(old('qtn_18') == 'yes') checked @endif>
 			<label for="yes">Yes</label><br>
-			<input type="radio" id="no" name="qtn_18" value="no" style="width: 2%">
+			<input type="radio" id="no" name="qtn_18" value="no" style="width: 2%" @if(old('qtn_18') == 'no') checked @endif>
 			<label for="no">No</label>
 	    </p>
 	    <strong class="text-danger"> {{$errors->has('qtn_18') ? $errors->first('qtn_18') : '' }} </strong>

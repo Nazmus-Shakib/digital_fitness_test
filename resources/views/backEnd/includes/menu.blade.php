@@ -67,6 +67,23 @@
         </div>
       </li>
 
+      <!-- Nav Item - Users Collapse Menu -->
+      <li class="nav-item">
+        <a class="{{ $route == 'users.recommend.view' ||  $route == 'users.recommend.details' ? '' : 'collapsed' }}
+           nav-link" href="#" data-toggle="collapse" data-target="#usersRecom" aria-expanded="true" aria-controls="usersRecom">
+          <i class="fas fa-users"></i>
+          <span>Users Results</span>
+        </a>
+        <div id="usersRecom" class="collapse {{( $route == 'users.recommend.view' ||  $route == 'users.recommend.details') ? 'show' : '' }}" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Users Results</h6>
+
+            <a class="{{ $route == 'users.recommend.view' ||  $route == 'users.recommend.details' ? 'active' : '' }} collapse-item" href=" {{ route('users.recommend.view')}} ">View Results</a>
+          </div>
+        </div>
+      </li>
+
       <!-- Nav Item - Business Type Collapse Menu -->
       <li class="nav-item">
         <a class="{{ $route == 'business.type.add' || $route == 'business.type.view' || $route == 'business.type.edit' ? '' : 'collapsed' }}

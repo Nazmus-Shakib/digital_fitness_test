@@ -55,26 +55,28 @@
         <p>
             <select class="form-control" name="title">
                 <option value="">please select title</option>
-                <option value="tan_sri">Tan Sri</option>
-                <option value="puan_sri">Puan Sri</option>
-                <option value="dato_seri">Dato' Seri</option>
-                <option value="datin_seri">Datin' Seri</option>
-                <option value="dato">Dto'</option>
-                <option value="datuk">Datuk</option>
-                <option value="datin">Datin</option>
-                <option value="prof">Prof</option>
-                <option value="dr">Dr</option>
-                <option value="ir">Ir</option>
-                <option value="mr">Mr</option>
-                <option value="mrs">Mrs</option>
-                <option value="ms">Ms</option>
+                <option value="tan_sri" @if(old('title') == 'tan_sri') selected="selected" @endif>Tan Sri</option>
+                <option value="puan_sri" @if(old('title') == 'puan_sri') selected="selected" @endif>Puan Sri</option>
+                <option value="dato_seri" @if(old('title') == 'dato_seri') selected="selected" @endif>Dato' Seri</option>
+                <option value="datin_seri" @if(old('title') == 'datin_seri') selected="selected" @endif>Datin Seri</option>
+                <option value="dato" @if(old('title') == 'dato') selected="selected" @endif>Dato</option>
+                <option value="datuk" @if(old('title') == 'datuk') selected="selected" @endif>Datuk</option>
+                <option value="datin" @if(old('title') == 'datin') selected="selected" @endif>Datin</option>
+                <option value="prof" @if(old('title') == 'prof') selected="selected" @endif>Prof</option>
+                <option value="dr" @if(old('title') == 'dr') selected="selected" @endif>Dr</option>
+                <option value="ir" @if(old('title') == 'ir') selected="selected" @endif>Ir</option>
+                <option value="mr" @if(old('title') == 'mr') selected="selected" @endif>Mr</option>
+                <option value="mrs" @if(old('title') == 'mrs') selected="selected" @endif>Mrs</option>
+                <option value="ms" @if(old('title') == 'ms') selected="selected" @endif>Ms</option>
             </select>
         </p>
+        <strong class="text-danger"> {{$errors->has('title') ? $errors->first('title') : '' }} </strong>
       </div>
 
       <div class="tab">
         <b>Please Enter Your Designation</b>
         <p><input type="text" name="designation" oninput="this.className = ''" placeholder="designation" value="{{ old('designation') }}" /></p>
+        <strong class="text-danger"> {{$errors->has('designation') ? $errors->first('designation') : '' }} </strong>
       </div>
 
       <div class="tab">
@@ -82,15 +84,16 @@
         <p>
             <select class="form-control" name="grants_access">
                 <option value="">please select grants access</option>
-                <option value="daily_website">The SME Daily Website</option>
-                <option value="masterclass_website">SME Masterclass Website</option>
-                <option value="direct_mailer">Direct Mailer(EDM)</option>
-                <option value="friends_colleagues">Friends or Colleagues</option>
-                <option value="social_media">Social Media</option>
-                <option value="media_coverage">Media Coverage</option>
-                <option value="events">Events</option>
+                <option value="daily_website" @if(old('grants_access') == 'daily_website') selected="selected" @endif>The SME Daily Website</option>
+                <option value="masterclass_website" @if(old('grants_access') == 'masterclass_website') selected="selected" @endif>SME Masterclass Website</option>
+                <option value="direct_mailer" @if(old('grants_access') == 'direct_mailer') selected="selected" @endif>Direct Mailer(EDM)</option>
+                <option value="friends_colleagues" @if(old('grants_access') == 'friends_colleagues') selected="selected" @endif>Friends or Colleagues</option>
+                <option value="social_media" @if(old('grants_access') == 'social_media') selected="selected" @endif>Social Media</option>
+                <option value="media_coverage" @if(old('grants_access') == 'media_coverage') selected="selected" @endif>Media Coverage</option>
+                <option value="events" @if(old('grants_access') == 'events') selected="selected" @endif>Events</option>
             </select>
         </p>
+        <strong class="text-danger"> {{$errors->has('grants_access') ? $errors->first('grants_access') : '' }} </strong>
       </div>
       <div style="overflow:auto;">
         <div style="float:right;">
@@ -106,7 +109,7 @@
         <span class="step"></span>
         <span class="step"></span>
         <span class="step"></span>
-        
+
       </div>
     </form>
   @else
